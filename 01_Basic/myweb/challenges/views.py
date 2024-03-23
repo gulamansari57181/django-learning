@@ -8,3 +8,10 @@ from django.http import HttpResponse
 def index(request):
 
     return HttpResponse("Hurray!! This is working.")
+
+
+# Creating a function based view for feb
+
+def feb(request):
+    
+    return HttpResponse("I am in Febuaray Month !!")
