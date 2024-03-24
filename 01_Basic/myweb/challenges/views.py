@@ -29,7 +29,8 @@ challenges = {
 def monthly_challenge(request, month):
     
     try:
-        return HttpResponse(challenges[month])
+        response_data=f"<h1>{challenges[month]}</h1>"
+        return HttpResponse(response_data)
 
     except:
         return HttpResponseNotFound("This url is not supported.\n Please check your url. ")
