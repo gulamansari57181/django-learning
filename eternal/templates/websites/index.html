@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - M Tech Student Profile</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>About Me</h1>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <input type="checkbox" id="theme-toggle">
+                <span class="toggle-slider"></span>
+            </label>
+        </div>
+    </header>
+
+    <section id="profile">
+        <div class="profile-banner">
+            <div class="slider">
+                <img src="https://via.placeholder.com/800x300?text=Slide+1" alt="Banner Image 1">
+                <img src="https://via.placeholder.com/800x300?text=Slide+2" alt="Banner Image 2">
+                <img src="https://via.placeholder.com/800x300?text=Slide+3" alt="Banner Image 3">
+            </div>
+            <img src="https://via.placeholder.com/150?text=Profile+Pic" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="container">
+            <div class="profile-info">
+                <div class="profile-text">
+                    <h2>Profile</h2>
+                    <p>Hello! I'm <strong>[Your Name]</strong>, a dedicated M Tech student specializing in <strong>[Your Specialization]</strong>. With a passion for <strong>[Your Interests]</strong>, I aim to contribute to the field of <strong>[Your Field]</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p>I am currently pursuing an M Tech in <strong>[Your Specialization]</strong> from <strong>[Your University]</strong>. My previous education includes a <strong>[Your Previous Degree]</strong> in <strong>[Your Previous Field]</strong> from <strong>[Previous University]</strong>.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project Title 1</h3>
+                <p>Brief description of your project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Title 2</h3>
+                <p>Brief description of your project.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Title 3</h3>
+                <p>Brief description of your project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you would like to get in touch, please email me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
